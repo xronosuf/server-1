@@ -10,170 +10,194 @@ SERVER CSS FILE: This contains the css that supports general structural aspects 
 To make this file actually navigatable, here is a table of contents 
 with a search string unique to each section.
 
-A.        (###A) Support for LaTeX font rendering
-  A.1     (###A.1) Load the actual fonts from other websites
-  A.2     (###A.2) Sets style info for each font
-  A.3     (###A.3) Sets style info for when LaTeX font is resized
-  A.4     (###A.4) Accent styling
-  A.5     (###A.5) Styling for media screens?
-  A.6     (###A.6) Styling for LaTeX text inside generated images and table-like environments
-  A.7     (###A.7) Styling for text that is specially rendered inside the LaTeX Engine, e.g. \to, \lbrace, etc
-  A.8     (###A.8) Styling for LaTeX Engine mechanisms, like fbox, mbox, colorbox, etc.
-  A.9     (###A.9) Sage font support
-  A.MISC  (###A.MISC) I don't know what this is doing, other than styling the LaTeX font.
+The intent here is to help me find stuff and possibly combine some things,
+and/or to easily find content that should be edited/moved in relation to
+the cls/4ht files.
 
-B.        (###B) Math Input Field (Ans Box?)
-  B.1     (###B.1) Math Input field
-  B.2     (###B.2) Text Cursor
-  B.3     (###B.3) Button Interactions
-  B.4     (###B.4) Modal?
+A.        (##A) Support for LaTeX font rendering
+  A.1     (##A.1) Load the actual fonts from other websites
+  A.2     (##A.2) Sets style info for each font
+  A.3     (##A.3) Sets style info for when LaTeX font is resized
+  A.4     (##A.4) Accent styling
+  A.5     (##A.5) Styling for media screens?
+  A.6     (##A.6) Styling for LaTeX text inside generated images and table-like environments
+  A.7     (##A.7) Styling for text that is specially rendered inside the LaTeX Engine, e.g. \to, \lbrace, etc
+  A.8     (##A.8) Styling for LaTeX Engine mechanisms, like fbox, mbox, colorbox, etc.
+  A.9     (##A.9) Sage font support
+  A.MISC  (##A.MISC) I don't know what this is doing, other than styling the LaTeX font.
 
-C.        (###C) Flash
-  C.1     (###C.1) Browser Specific Flash Settings
+B.        (##B) Math Input Field (Ans Box?)
+  B.1     (##B.1) Math Input field
+  B.2     (##B.2) Text Cursor
+  B.3     (##B.3) Button Interactions
+  B.4     (##B.4) Modal?
 
-D.        (###D) CodeMirror editor settings
-  D.1     (###D.1) Base CodeMirror setup 
-  D.2     (###D.2) CodeMirror Gutter Settings
-  D.3     (###D.3) CodeMirror Cursor Settings 
-  D.4     (###D.4) CodeMirror Ruler Settings
-  D.5     (###D.5) CodeMirror Default Theme?
-  D.6     (###D.6) CodeMirror Scroll Bar Settings
-  D.7     (###D.7) CodeMirror Visible Lines
-  D.8     (###D.8) CodeMirror text editor sizing
-  D.MISC  (###D.MISC) Cursor Visibility and MISC stuff?
+C.        (##C) Flash
+  C.1     (##C.1) Browser Specific Flash Settings
 
-E.        (###E) BootStrap CSS Code Import
-  E.1     (###E.1) Basic Tag Settings
-  E.2     (###E.2) A/V and image.
-  E.3     (###E.3) Button Settings
-  E.4     (###E.4) Math Editor Settings?
-  E.5     (###E.5) TeX to html Layout Translation
-  E.6     (###E.6) Basic HTML Layout Settings
-  E.7     (###E.7) Embedded Media Container Settings
-  E.8     (###E.8) Bootstrap Grid Layout Settings
-  E.9     (###A.9) Sage font support
-  E.MISC  (###A.MISC) I don't know what this is doing, other than styling the LaTeX font.
+D.        (##D) CodeMirror editor settings
+  D.1     (##D.1) Base CodeMirror setup 
+  D.2     (##D.2) CodeMirror Gutter Settings
+  D.3     (##D.3) CodeMirror Cursor Settings 
+  D.4     (##D.4) CodeMirror Ruler Settings
+  D.5     (##D.5) CodeMirror Default Theme?
+  D.6     (##D.6) CodeMirror Scroll Bar Settings
+  D.7     (##D.7) CodeMirror Visible Lines
+  D.8     (##D.8) CodeMirror text editor sizing
+  D.MISC  (##D.MISC) Cursor Visibility and MISC stuff?
 
-F.        (###F) Table, Tabular, and related.
-  F.1     (###F.1) Basic Settings
-  F.2     (###F.2) Inverted Table Settings (Dark Mode?)
-  F.3     (###F.3) Responsive Table Settings?
+E.        (##E) BootStrap CSS Code Import
+  E.1     (##E.1) Basic Tag Settings
+  E.2     (##E.2) A/V and image.
+  E.3     (##E.3) Button Settings
+  E.4     (##E.4) Math Editor Settings?
+  E.5     (##E.5) TeX to html Layout Translation
+  E.6     (##E.6) Basic HTML Layout Settings
+  E.7     (##E.7) Embedded Media Container Settings
+  E.8     (##E.8) Bootstrap Grid Layout Settings
 
-G.        (###G) Form Control Settings?
-  G.1     (###G.1) Basic Form Settings
-  G.2     (###G.2) Active/Selected Form
-  G.3     (###G.3) Labels in Columns?
-  G.4     (###G.4) Form Layout Settings
-  G.5     (###G.5) Form Feedback
-  G.6     (###G.6) In-line Form Settings
+F.        (##F) Table, Tabular, and related.
+  F.1     (##F.1) Basic Settings
+  F.2     (##F.2) Inverted Table Settings (Dark Mode?)
+  F.3     (##F.3) Responsive Table Settings?
 
-H.        (###H) Buttons
-  H.1     (###H.1) Basic Button Settings
-  H.2     (###H.2) Active/Disabled Buttons
-  H.3     (###H.3) Primary Button?
-  H.4     (###H.4) Secondary Button?
-  H.5     (###H.5) Button "Info"
-  H.6     (###H.6) Button Success
-  H.7     (###H.7) Button Warning
-  H.8     (###H.8) Button Danger
-  H.9     (###H.9) Button Outline
-  H.10    (###H.10) Button Link
-  H.11    (###H.11) Button Sizing
+G.        (##G) Form Control Settings?
+  G.1     (##G.1) Basic Form Settings
+  G.2     (##G.2) Active/Selected Form
+  G.3     (##G.3) Labels in Columns?
+  G.4     (##G.4) Form Layout Settings
+  G.5     (##G.5) Form Feedback
+  G.6     (##G.6) In-line Form Settings
 
-I.        (###I) Dropdown Menus
-  I.1     (###I.1) Basic Settings
-  I.2     (###I.2) Dividers and Items
-  I.3     (###I.3) Layout Settings
-  I.4     (###I.4) Input-group-addon?
-  I.5     (###I.5) Custom-Control?
+H.        (##H) Buttons
+  H.1     (##H.1) Basic Button Settings
+  H.2     (##H.2) Active/Disabled Buttons
+  H.3     (##H.3) Primary Button?
+  H.4     (##H.4) Secondary Button?
+  H.5     (##H.5) Button "Info"
+  H.6     (##H.6) Button Success
+  H.7     (##H.7) Button Warning
+  H.8     (##H.8) Button Danger
+  H.9     (##H.9) Button Outline
+  H.10    (##H.10) Button Link
+  H.11    (##H.11) Button Sizing
 
-J.        (###J) Custom Controls
-  J.1     (###J.1) Basic Settings
-  J.2     (###J.2) Custom Control Indicator 
-  J.3     (###J.3) Custom Checkbox
-  J.4     (###J.4) Custom Select
-  J.5     (###J.5) Custom File
+I.        (##I) Dropdown Menus
+  I.1     (##I.1) Basic Settings
+  I.2     (##I.2) Dividers and Items
+  I.3     (##I.3) Layout Settings
+  I.4     (##I.4) Input-group-addon?
+  I.5     (##I.5) Custom-Control?
 
-K.        (###K) Navigation Panel
-  K.1     (###K.1) Basic Settings
-  K.2     (###K.2) Nav Tabs
-  K.3     (###K.3) Nav Bar
+J.        (##J) Custom Controls
+  J.1     (##J.1) Basic Settings
+  J.2     (##J.2) Custom Control Indicator 
+  J.3     (##J.3) Custom Checkbox
+  J.4     (##J.4) Custom Select
+  J.5     (##J.5) Custom File
 
-L.        (###L) Cards
-  L.1     (###L.1) Basic Settings
-  L.2     (###L.2) Card Layout
-  L.3     (###L.3) Card Colorings
-  L.4     (###L.4) Card image and media
+K.        (##K) Navigation Panel
+  K.1     (##K.1) Basic Settings
+  K.2     (##K.2) Nav Tabs
+  K.3     (##K.3) Nav Bar
 
-M.        (###M) Breadcrumb
-  M.1     (###M.1) Basic Settings
+L.        (##L) Cards
+  L.1     (##L.1) Basic Settings
+  L.2     (##L.2) Card Layout
+  L.3     (##L.3) Card Colorings
+  L.4     (##L.4) Card image and media
 
-N.        (###N) Page Building/Layout
-  N.1     (###N.1) Page items
-  N.2     (###N.2) Page Link
-  N.3     (###N.3) Badge
-  N.4     (###N.4) Alert
+M.        (##M) Breadcrumb
+  M.1     (##M.1) Basic Settings
 
-O.        (###O) Progress
-  O.1     (###O.1) Basic Settings
+N.        (##N) Page Building/Layout
+  N.1     (##N.1) Page items
+  N.2     (##N.2) Page Link
+  N.3     (##N.3) Badge
+  N.4     (##N.4) Alert
 
-P.        (###P) list-groups
-  P.1     (###P.1) Basic Settings
-  P.2     (###P.2) Item Actions
-  P.3     (###P.3) Group Items
+O.        (##O) Progress
+  O.1     (##O.1) Basic Settings
 
-Q.        (###Q) Embedables
-  Q.1     (###Q.1) Responsive
-  Q.2     (###Q.2) Close
+P.        (##P) list-groups
+  P.1     (##P.1) Basic Settings
+  P.2     (##P.2) Item Actions
+  P.3     (##P.3) Group Items
 
-R.        (###R) Modal
-  R.1     (###R.1) Basic Settings
-  R.2     (###R.2) Layout/Content/Backdrop
-  R.3     (###R.3) Media
+Q.        (##Q) Embedables
+  Q.1     (##Q.1) Responsive
+  Q.2     (##Q.2) Close
 
-S.        (###S) Tooltips
-  S.1     (###S.1) Basic Settings
-  S.2     (###S.2) Layout
-  S.3     (###S.3) Popover
-  S.4     (###S.4) Carousel
-  S.5     (###S.5) Carousel Control
-  S.6     (###S.6) Carousel Indicators
-  S.7     (###S.7) Carousel Caption
+R.        (##R) Modal
+  R.1     (##R.1) Basic Settings
+  R.2     (##R.2) Layout/Content/Backdrop
+  R.3     (##R.3) Media
 
-T.        (###T) Align
-  T.1     (###T.1) Media
+S.        (##S) Tooltips
+  S.1     (##S.1) Basic Settings
+  S.2     (##S.2) Layout
+  S.3     (##S.3) Popover
+  S.4     (##S.4) Carousel
+  S.5     (##S.5) Carousel Control
+  S.6     (##S.6) Carousel Indicators
+  S.7     (##S.7) Carousel Caption
 
-U.        (###U) More LaTeX to Tag Conversion
-  U.1     (###U.1) Media
-  H.2     (###U.2) Text Types
-  H.3     (###U.3) Text Types in Media
-  H.4     (###U.4) More Text Types
+T.        (##T) Align
+  T.1     (##T.1) Media
 
-V.        (###V) Hidden/Invisibility
-  V.1     (###V.1) Media
+U.        (##U) More LaTeX to Tag Conversion
+  U.1     (##U.1) Media
+  U.2     (##U.2) Text Types
+  U.3     (##U.3) Text Types in Media
+  U.4     (##U.4) More Text Types
 
-W.        (###W) More Embedded/Button/Pulsate?
+V.        (##V) Hidden/Invisibility
+  V.1     (##V.1) Media
 
-X.        (###X) External Font Settings
-  X.1     (###X.1) Font Tags
-  H.2     (###U.2) Text Types
-  H.3     (###U.3) Text Types in Media
-  H.4     (###U.4) More Text Types
-  H.5     (###H.5) Button "Info"
-  H.6     (###H.6) Button Success
-  H.7     (###H.7) Button Warning
-  H.8     (###H.8) Button Danger
-  H.9     (###H.9) Button Outline
-  H.10    (###H.10) Button Link
-  H.11    (###H.11) Button Sizing
+W.        (##W) More Embedded/Button/Pulsate?
+
+X.        (##X) External Font Settings
+  X.1     (##X.1) Font Tags
+
+Y.        (##Y) Scren Reader Tag
+
+Z.        (##Z) Theorem-Like Environments
+  Z.1     (##Z.1) Couter Initialization
+  Z.2     (##Z.2) Settings/Before/After by env.
+  Z.3     (##Z.3) Settings/Before/After For Titles
+  
+AA.       (##AA) MathJax
+AB.       (##AB) Footer
+AC.       (##AC) Abstract
+AD.       (##AD) Certificate of Completion
+AE.       (##AE) Image Environments (Again?)
+
+AF.       (##AF) Customizing...?
+  AF.1    (##AF.1) Carousel
+  AF.2    (##AF.2) Marketing Content
+  AF.3    (##AF.3) Featurettes
+  AF.4    (##AF.4) Responsive CSS
+  AF.5    (##AF.5) Abstract Styling
+  AF.6    (##AF.6) Items To Links
+  AF.7    (##AF.7) Contact Instructor and Math Editor Button
+  AF.8    (##AF.8) Table of Contents
+  AF.9    (##AF.9) Progress Bar
+  AF.10   (##AF.10) Top Bar?
+  AF.11   (##AF.11) Tablet Menu
+  AF.12   (##AF.12) Desktop Menu
+  AF.13   (##AF.13) Cards (again?)
+  AF.14   (##AF.14) Nav panel (again?)
+
+AG.       (##AG) Syntax Highlighter
+AH.       (##AH) Word Choice
 
 */
 
 /* =========================================================================================================
-      (###A) The following part is structural CSS to support rendering various LaTeX fonts in a browser. 
+      (##A) The following part is structural CSS to support rendering various LaTeX fonts in a browser. 
 ========================================================================================================= */
 
-/* (###A.1) Loading the actual fonts themselves - using primarily KaTeX */
+/* (##A.1) Loading the actual fonts themselves - using primarily KaTeX */
 
 @charset "UTF-8";
 @font-face {
@@ -289,7 +313,7 @@ X.        (###X) External Font Settings
   font-style: normal;
 }
 
-/* (###A.2) Sets style info for each font - e.g. block, in-line, text-alignment, etc. */
+/* (##A.2) Sets style info for each font - e.g. block, in-line, text-alignment, etc. */
 
 .katex-display {
   display: block; /* Layout display mode */
@@ -469,7 +493,7 @@ X.        (###X) External Font Settings
   margin-left: 0.27777778em; /* Left outer spacing */
   margin-right: -0.55555556em; /* Right outer spacing */}
 
-/* (###A.3) Sets style info for when LaTeX font is resized */
+/* (##A.3) Sets style info for when LaTeX font is resized */
 
 .katex .fontsize-ensurer.reset-size1.size1, .katex .sizing.reset-size1.size1 { font-size: 1em; /* Font size */}
 .katex .fontsize-ensurer.reset-size1.size2, .katex .sizing.reset-size1.size2 { font-size: 1.2em; /* Font size */}
@@ -603,7 +627,7 @@ X.        (###X) External Font Settings
 .katex .op-symbol.small-op { font-family: KaTeX_Size1; /* Font family */}
 .katex .op-symbol.large-op { font-family: KaTeX_Size2; /* Font family */}
 
-/* (###A.4) Accent styling */
+/* (##A.4) Accent styling */
 
 .katex .accent .accent-body > span { width: 0; /* Element width */}
 
@@ -619,7 +643,7 @@ X.        (###X) External Font Settings
   margin: 0 -0.025em; /* Outer spacing */
   width: 0.05em; /* Element width */}
 
-/* (###A.5) Styling for media screens? */
+/* (##A.5) Styling for media screens? */
 
 @media screen {
   .katex .mfrac .frac-line, .katex .overline .overline-line, .katex .underline .underline-line {
@@ -632,7 +656,7 @@ X.        (###X) External Font Settings
   .katex .mtable .vertical-separator { min-width: 0.5px; /* Minimum element width */}
 }
 
-/* (###A.6) Styling for LaTeX text inside generated images and table-like environments (e.g. tables, align */
+/* (##A.6) Styling for LaTeX text inside generated images and table-like environments (e.g. tables, align */
 
 .katex .stretchy, .katex svg {
   display: block; /* Layout display mode */
@@ -651,7 +675,7 @@ X.        (###X) External Font Settings
   position: relative; /* Positioning scheme */
   overflow: hidden; /* Overflow behavior */}
 
-/* (###A.7) Styling for text that is specially rendered inside the LaTeX Engine, e.g. \to, \lbrace, etc */ 
+/* (##A.7) Styling for text that is specially rendered inside the LaTeX Engine, e.g. \to, \lbrace, etc */ 
 
 .katex .brace-center, .katex .brace-left, .katex .brace-right, .katex .halfarrow-left, .katex .halfarrow-right {
   position: absolute; /* Positioning scheme */
@@ -680,7 +704,7 @@ X.        (###X) External Font Settings
 .katex .x-arrow-pad { padding: 0 0.5em; /* Inner spacing */}
 .katex .mover, .katex .munder, .katex .x-arrow { text-align: center; /* Horizontal text alignment */}
 
-/* (###A.8) Styling for LaTeX Engine mechanisms, like fbox, mbox, colorbox, etc. */
+/* (##A.8) Styling for LaTeX Engine mechanisms, like fbox, mbox, colorbox, etc. */
 
 .katex .boxpad { padding: 0 0.3em; /* Inner spacing */}
 
@@ -692,24 +716,24 @@ X.        (###X) External Font Settings
   box-sizing: border-box; /* Box sizing model */
   border: 0.04em solid; /* Border style */}
 
-/* (###A.9) Sage font support */
+/* (##A.9) Sage font support */
 
 .katex .sout {
   border-bottom-style: solid; /* Bottom border style */
   border-bottom-width: 0.08em; /* Bottom border width */
 }
 
-/* (###A.MISC) I don't know what this is doing, other than styling the LaTeX font. */
+/* (##A.MISC) I don't know what this is doing, other than styling the LaTeX font. */
 
 .katex .cancel-pad { padding: 0 0.2em; /* Inner spacing */}
 
 .katex .cancel-lap + .mbin, .katex .cancel-lap + .mord, .katex .cancel-lap + .msupsub, .katex .mbin + .cancel-lap, .katex .mord + .cancel-lap { margin-left: -0.2em; /* Left outer spacing */}
 
 /* ==========================================
-  (###B) Math Input Interaction (Ans Box?)
+  (##B) Math Input Interaction (Ans Box?)
 ========================================== */
 
-/* (###B.1) Math Input field */
+/* (##B.1) Math Input field */
 
 /* Active styling */
 .guppy_active {
@@ -733,7 +757,7 @@ X.        (###X) External Font Settings
   position: relative;                           /* Needed for button positioning */
 }
 
-/* (###B.2) Text Cursor */
+/* (##B.2) Text Cursor */
 
 /* Text cursor style */
 .guppy_text_current {
@@ -755,7 +779,7 @@ X.        (###X) External Font Settings
   to { visibility: hidden; }
 }
 
-/* (###B.3) Button Interactions */
+/* (##B.3) Button Interactions */
 
 /* Show/hide interactive buttons */
 .guppy_active .guppy_buttons { display: block; }  /* Buttons visible when field is active */
@@ -782,7 +806,7 @@ X.        (###X) External Font Settings
 .guppy_buttons img:hover { opacity: 1; }/* Full visibility on hover */
 
 /* =====================
-    (###B.4) Modal? 
+    (##B.4) Modal? 
 ===================== */
 
 /* Modal dialog settings */
@@ -794,10 +818,10 @@ X.        (###X) External Font Settings
 }
 
 /* =====================
-      (###C: Flash)  
+      (##C: Flash)  
 ===================== */
 
-/* (###C.1) Browser Specific Flash Settings */
+/* (##C.1) Browser Specific Flash Settings */
 
 /* Flash highlight */
 .flash {
@@ -832,11 +856,11 @@ X.        (###X) External Font Settings
 }
 
 /* ======================================
-      (###D) CodeMirror editor settings
+      (##D) CodeMirror editor settings
 ====================================== */
 
 /* ======================================
-      (###D.1) Base CodeMirror setup 
+      (##D.1) Base CodeMirror setup 
 ====================================== */
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
@@ -850,7 +874,7 @@ X.        (###X) External Font Settings
 }
 
 /* ======================================
-  (###D.2) CodeMirror Gutter Settings 
+  (##D.2) CodeMirror Gutter Settings 
 ====================================== */
 
 /* CodeMirror Gutters are the hook for stuff to the left of the codemirror content? */
@@ -908,7 +932,7 @@ X.        (###X) External Font Settings
 .CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent; }
 
 /* ======================================
-    (###D.3) CodeMirror Cursor Settings 
+    (##D.3) CodeMirror Cursor Settings 
 ====================================== */
 
 .cm-fat-cursor .CodeMirror-cursor {
@@ -937,7 +961,7 @@ X.        (###X) External Font Settings
 }
 
 /* ======================================
-    (###D.4) CodeMirror Ruler Settings
+    (##D.4) CodeMirror Ruler Settings
 ====================================== */
 
 .CodeMirror-rulers {
@@ -957,7 +981,7 @@ X.        (###X) External Font Settings
 }
 
 /* ======================================
-    (###D.5) CodeMirror Default Theme?
+    (##D.5) CodeMirror Default Theme?
 ====================================== */
 .cm-s-default .cm-header { color: blue; }
 .cm-s-default .cm-quote { color: #090; }
@@ -997,7 +1021,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #a22; }
 .CodeMirror-activeline-background { background: #e8f2ff; }
 
 /* ======================================
- (###D.6) CodeMirror Scroll Bar Settings
+ (##D.6) CodeMirror Scroll Bar Settings
 ====================================== */
 .CodeMirror-scroll {
   overflow: scroll !important; /* Things will break if this is overridden */
@@ -1048,7 +1072,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #a22; }
 }
 
 /* ======================================
-  (###D.7) CodeMirror Visible Lines
+  (##D.7) CodeMirror Visible Lines
 ====================================== */
 
 .CodeMirror-lines {
@@ -1105,7 +1129,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #a22; }
 .CodeMirror-code { outline: none; }
 
 /* ======================================
-  (###D.8) CodeMirror text editor sizing
+  (##D.8) CodeMirror text editor sizing
 ====================================== */
 
 /* Force content-box sizing for the elements where we expect it */
@@ -1144,7 +1168,7 @@ div.CodeMirror-cursors {
 }
 
 /* ===============================================
-  (###D.MISC) Cursor Visibility and MISC stuff?
+  (##D.MISC) Cursor Visibility and MISC stuff?
 =============================================== */
 
 div.CodeMirror-dragcursors { visibility: visible; }
@@ -1174,7 +1198,7 @@ div.CodeMirror-dragcursors { visibility: visible; }
 span.CodeMirror-selectedtext { background: none; }
 
 /* ===============================================
-        (###E) BootStrap CSS Code Import
+        (##E) BootStrap CSS Code Import
 =============================================== */
 
 /*!
@@ -1186,7 +1210,7 @@ span.CodeMirror-selectedtext { background: none; }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* ==============================
-   (###E.1) Basic Tag Settings
+   (##E.1) Basic Tag Settings
 ============================== */
 
 html {
@@ -1256,7 +1280,7 @@ sub { bottom: -0.25em; }
 sup { top: -0.5em; }
 
 /* ==============================
-   (###E.2) A/V and image.
+   (##E.2) A/V and image.
 ============================== */
 
 audio, video { display: inline-block; }
@@ -1271,7 +1295,7 @@ img { border-style: none; }
 svg:not(:root) { overflow: hidden; }
 
 /* ==============================
-   (###E.3) Button Settings
+   (##E.3) Button Settings
 ============================== */
 
 button, input, optgroup, select, textarea {
@@ -1309,7 +1333,7 @@ fieldset {
 }
 
 /* ================================
-   (###E.4) Math Editor Settings?
+   (##E.4) Math Editor Settings?
 ================================ */
 
 legend {
@@ -1358,7 +1382,7 @@ template { display: none; }
 [hidden] { display: none; }
 
 /* ==========================================
-   (###E.5) TeX to html Layout Translation
+   (##E.5) TeX to html Layout Translation
 ========================================== */
 
 @media print {
@@ -1410,7 +1434,7 @@ html {
 }
 
 /* =====================================
- (###E.6) Basic HTML Layout Settings
+ (##E.6) Basic HTML Layout Settings
 ===================================== */
 
 body {
@@ -1735,7 +1759,7 @@ pre code, pre .verb {
 }
 
 /* ==========================================
- (###E.7) Embedded Media Container Settings
+ (##E.7) Embedded Media Container Settings
 ========================================== */
 
 @media (min-width: 576px) {
@@ -1860,7 +1884,7 @@ pre code, pre .verb {
 }
 
 /* ==========================================
- (###E.8) Bootstrap Grid Layout Settings
+ (##E.8) Bootstrap Grid Layout Settings
 ========================================== */
 
 .col-xl, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-12, .col-md-11, .col-md-10, dl.dialogue dd, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, dl.dialogue dt, .col-md-1, .col-sm, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
@@ -2394,11 +2418,11 @@ pre code, pre .verb {
 }
 
 /* ==========================================
-    (###F) Table, Tabular, and related.
+    (##F) Table, Tabular, and related.
 ========================================== */
 
 /* =======================
- (###F.1) Basic Settings
+ (##F.1) Basic Settings
 ======================= */
 
 .table, table.tabular {
@@ -2440,7 +2464,7 @@ pre code, pre .verb {
 .table-hover .table-danger:hover > td, .table-hover .table-danger:hover > th { background-color: #ebcccc; }
 
 /* ==============================================
- (###F.2) Inverted Table Settings (Dark Mode?)
+ (##F.2) Inverted Table Settings (Dark Mode?)
 ============================================== */
 
 .thead-inverse th {
@@ -2461,7 +2485,7 @@ pre code, pre .verb {
 .table-inverse.table-bordered { border: 0; }
 
 /* ===================================
- (###F.3) Responsive Table Settings?
+ (##F.3) Responsive Table Settings?
 =================================== */
 
 .table-responsive {
@@ -2473,11 +2497,11 @@ pre code, pre .verb {
 .table-responsive.table-bordered { border: 0; }
 
 /* ===========================================
-        (###G) Form Control Settings?
+        (##G) Form Control Settings?
 =========================================== */
 
 /* ===================================
-    (###G.1) Basic Form Settings
+    (##G.1) Basic Form Settings
 =================================== */
 
 .form-control {
@@ -2500,7 +2524,7 @@ pre code, pre .verb {
 }
 
 /* ===================================
-    (###G.2) Active/Selected Form
+    (##G.2) Active/Selected Form
 =================================== */
 
 .form-control:focus {
@@ -2528,7 +2552,7 @@ select.form-control:focus::-ms-value {
 .form-control-file, .form-control-range { display: block; }
 
 /* ===================================
-    (###G.3) Labels in Columns?
+    (##G.3) Labels in Columns?
 =================================== */
 
 .col-form-label {
@@ -2557,7 +2581,7 @@ select.form-control:focus::-ms-value {
 }
 
 /* ===================================
-    (###G.4) Form Layout Settings
+    (##G.4) Form Layout Settings
 =================================== */
 
 .form-control-static {
@@ -2622,7 +2646,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .form-check-inline + .form-check-inline { margin-left: 0.75rem; }
 
 /* ==========================
-    (###G.5) Form Feedback
+    (##G.5) Form Feedback
 ========================== */
 
 .form-control-feedback { margin-top: 0.25rem; }
@@ -2662,7 +2686,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-danger .form-control-danger { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23bb0000' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E"); }
 
 /* ==================================
-    (###G.6) In-line Form Settings
+    (##G.6) In-line Form Settings
 ================================== */
 
 .form-inline {
@@ -2727,11 +2751,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ==================================
-          (###H) Buttons 
+          (##H) Buttons 
 ================================== */
 
 /* ================================
-  (###H.1) Basic Button Settings
+  (##H.1) Basic Button Settings
 ================================ */
 
 .btn {
@@ -2749,7 +2773,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ==================================
-  (###H.2) Active/Disabled Buttons
+  (##H.2) Active/Disabled Buttons
 ================================== */
 
 .btn:focus, .btn:hover{ text-decoration: none; }
@@ -2764,7 +2788,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .btn:active, .btn.active{ background-image: none; }a.btn.disabled, fieldset[disabled] a.btn{ pointer-events: none; }
 
 /* ==========================
-  (###H.3) Primary Button?
+  (##H.3) Primary Button?
 ========================== */
 
 .btn-primary {
@@ -2790,7 +2814,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ============================
-  (###H.4) Secondary Button?
+  (##H.4) Secondary Button?
 ============================ */
 
 .btn-secondary {
@@ -2816,7 +2840,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ============================
-  (###H.5) Button "Info"
+  (##H.5) Button "Info"
 ============================ */
 
 .btn-info {
@@ -2842,7 +2866,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ============================
-  (###H.6) Button Success
+  (##H.6) Button Success
 ============================ */
 
 .btn-success {
@@ -2868,7 +2892,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ============================
-  (###H.7) Button Warning
+  (##H.7) Button Warning
 ============================ */
 
 .btn-warning {
@@ -2894,7 +2918,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ============================
-  (###H.8) Button Danger
+  (##H.8) Button Danger
 ============================ */
 
 .btn-danger {
@@ -2920,7 +2944,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ============================
-  (###H.9) Button Outline
+  (##H.9) Button Outline
 ============================ */
 
 .btn-outline-primary {
@@ -3056,7 +3080,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ============================
-    (###H.10) Button Link
+    (##H.10) Button Link
 ============================ */
 
 .btn-link {
@@ -3076,7 +3100,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .btn-link:disabled:focus, .btn-link:disabled:hover{ text-decoration: none; }
 
 /* ==============================================
-    (###H.11) Button Sizing and Dropdown Menus
+    (##H.11) Button Sizing and Dropdown Menus
 ============================================== */
 
 .btn-lg, .btn-group-lg > .btn {
@@ -3111,11 +3135,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ==============================================
-          (###I) Dropdown Menus
+          (##I) Dropdown Menus
 ============================================== */
 
 /* ===========================
-    (###I.1) Basic Settings
+    (##I.1) Basic Settings
 =========================== */
 
 .dropup, .dropdown{ position: relative; }
@@ -3158,7 +3182,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* ===============================
-    (###I.2) Dividers and Items
+    (##I.2) Dividers and Items
 =============================== */
 
 .dropdown-divider {
@@ -3199,7 +3223,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .show > a{ outline: 0; }
 
 /* ===============================
-    (###I.3) Layout Settings
+    (##I.3) Layout Settings
 =============================== */
 
 .dropdown-menu-right {
@@ -3313,7 +3337,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .input-group .form-control:focus, .input-group .form-control:active, .input-group .form-control:hover{ z-index: 3; }
 
 /* ===============================
-    (###I.4) Input-group-addon?
+    (##I.4) Input-group-addon?
 =============================== */
 
 .input-group-addon, .input-group-btn, .input-group .form-control {
@@ -3368,11 +3392,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .input-group-btn:not(:first-child) > .btn:focus, .input-group-btn:not(:first-child) > .btn:active, .input-group-btn:not(:first-child) > .btn:hover , .input-group-btn:not(:first-child) > .btn-group:focus, .input-group-btn:not(:first-child) > .btn-group:active, .input-group-btn:not(:first-child) > .btn-group:hover{ z-index: 3; }
 
 /* ===============================
-    (###J) Custom-Control?
+    (##J) Custom-Control?
 =============================== */
 
 /* ===============================
-    (###J.1) Basic Settings
+    (##J.1) Basic Settings
 =============================== */
 
 .custom-control {
@@ -3391,7 +3415,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-    (###J.2) Custom Control Indicator
+    (##J.2) Custom Control Indicator
 ===================================== */
 
 .custom-control-input:checked ~ .custom-control-indicator {
@@ -3428,7 +3452,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-      (###J.3) Custom Checkbox
+      (##J.3) Custom Checkbox
 ===================================== */
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
@@ -3451,7 +3475,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .custom-controls-stacked .custom-control + .custom-control{ margin-left: 0; }
 
 /* =====================================
-      (###J.4) Custom Select
+      (##J.4) Custom Select
 ===================================== */
 
 .custom-select {
@@ -3490,7 +3514,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-      (###J.5) Custom File
+      (##J.5) Custom File
 ===================================== */
 
 .custom-file {
@@ -3543,11 +3567,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .custom-file-control:lang(en)::before{ content: "Browse"; }
 
 /* =====================================
-      (###K) Navigation Panel
+      (##K) Navigation Panel
 ===================================== */
 
 /* =====================================
-      (###K.1) Basic Settings
+      (##K.1) Basic Settings
 ===================================== */
 
 .nav {
@@ -3568,7 +3592,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-      (###K.2) Nav Tabs
+      (##K.2) Nav Tabs
 ===================================== */
 
 .nav-tabs{ border-bottom: 1px solid #ddd; }
@@ -3606,7 +3630,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .tab-content > .active{ display: block; }
 
 /* =============================
-      (###K.3) Nav Bar
+      (##K.3) Nav Bar
 ============================== */
 
 .navbar {
@@ -3855,11 +3879,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .navbar-inverse .navbar-text{ color: rgba(255, 255, 255, 0.5); }
 
 /* =====================================
-            (###L) Cards
+            (##L) Cards
 ===================================== */
 
 /* =====================================
-      (###L.1) Basic Settings
+      (##L.1) Basic Settings
 ===================================== */
 
 .card {
@@ -3871,7 +3895,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-      (###L.2) Card Layout
+      (##L.2) Card Layout
 ===================================== */
 
 .card-block {
@@ -3912,7 +3936,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-      (###L.3) Card Colorings
+      (##L.3) Card Colorings
 ===================================== */
 /* Note: Not all colorings, some are set above. */
 
@@ -3991,7 +4015,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-    (###L.4) Card image and media
+    (##L.4) Card image and media
 ===================================== */
 
 .card-img-overlay {
@@ -4040,11 +4064,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-          (###M) Breadcrumb
+          (##M) Breadcrumb
 ===================================== */
 
 /* =====================================
-    (###M.1) Basic Settings
+    (##M.1) Basic Settings
 ===================================== */
 
 .breadcrumb {
@@ -4071,11 +4095,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .breadcrumb-item.active{ color: #636c72; }
 
 /* =====================================
-    (###N) Page Building/Layout
+    (##N) Page Building/Layout
 ===================================== */
 
 /* =====================================
-        (###N.1) Page items
+        (##N.1) Page items
 ===================================== */
 
 .pagination {
@@ -4099,7 +4123,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-        (###N.2) Page Link
+        (##N.2) Page Link
 ===================================== */
 
 .page-link {
@@ -4129,7 +4153,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 /* =====================================
-        (###N.3) Badge
+        (##N.3) Badge
 ===================================== */
 
 .badge {
@@ -4188,7 +4212,7 @@ a.badge:focus, a.badge:hover {
 }
 
 /* =====================================
-        (###N.4) Alert
+        (##N.4) Alert
 ===================================== */
 
 .alert {
@@ -4242,11 +4266,11 @@ a.badge:focus, a.badge:hover {
 }
 
 /* =====================================
-        (###O) Progress
+        (##O) Progress
 ===================================== */
 
 /* =====================================
-        (###O.1) Basic Settings
+        (##O.1) Basic Settings
 ===================================== */
 
 .progress {
@@ -4277,11 +4301,11 @@ a.badge:focus, a.badge:hover {
 .media-body{ flex: 1; }
 
 /* =====================================
-        (###P) list-groups
+        (##P) list-groups
 ===================================== */
 
 /* =====================================
-        (###P.1) Basic Settings
+        (##P.1) Basic Settings
 ===================================== */
 
 .list-group {
@@ -4292,7 +4316,7 @@ a.badge:focus, a.badge:hover {
 }
 
 /* =====================================
-        (###P.2) Item Actions
+        (##P.2) Item Actions
 ===================================== */
 
 .list-group-item-action {
@@ -4312,7 +4336,7 @@ a.badge:focus, a.badge:hover {
 }
 
 /* =====================================
-        (###P.3) Group Items
+        (##P.3) Group Items
 ===================================== */
 
 .list-group-item {
@@ -4412,11 +4436,11 @@ a.list-group-item-danger.active, button.list-group-item-danger.active {
 }
 
 /* =====================================
-        (###Q) Embedables
+        (##Q) Embedables
 ===================================== */
 
 /* =====================================
-        (###Q.1) Responsive
+        (##Q.1) Responsive
 ===================================== */
 
 .embed-responsive {
@@ -4445,7 +4469,7 @@ a.list-group-item-danger.active, button.list-group-item-danger.active {
 .embed-responsive-1by1::before{ padding-top: 100%; }
 
 /* =====================================
-        (###Q.2) Close
+        (##Q.2) Close
 ===================================== */
 
 .close {
@@ -4474,11 +4498,11 @@ button.close {
 .modal-open{ overflow: hidden; }
 
 /* =====================================
-            (###R) Modal
+            (##R) Modal
 ===================================== */
 
 /* =====================================
-        (###R.1) Basic Settings
+        (##R.1) Basic Settings
 ===================================== */
 
 .modal {
@@ -4510,7 +4534,7 @@ button.close {
 }
 
 /* =====================================
-    (###R.2) Layout/Content/Backdrop
+    (##R.2) Layout/Content/Backdrop
 ===================================== */
 
 .modal-content {
@@ -4573,7 +4597,7 @@ button.close {
 }
 
 /* =====================================
-        (###R.3) Media
+        (##R.3) Media
 ===================================== */
 
 @media (min-width: 576px) {
@@ -4587,11 +4611,11 @@ button.close {
 }
 
 /* =====================================
-            (###S) Tooltip
+            (##S) Tooltip
 ===================================== */
 
 /* =====================================
-        (###S.1) Basic Settings
+        (##S.1) Basic Settings
 ===================================== */
 
 .tooltip {
@@ -4619,7 +4643,7 @@ button.close {
 .tooltip.show{ opacity: 0.9; }
 
 /* =====================================
-        (###S.2) Layout
+        (##S.2) Layout
 ===================================== */
 
 .tooltip.tooltip-top, .tooltip.bs-tether-element-attached-bottom {
@@ -4687,7 +4711,7 @@ button.close {
 }
 
 /* =====================================
-        (###S.3) Popover
+        (##S.3) Popover
 ===================================== */
 
 .popover {
@@ -4820,7 +4844,7 @@ button.close {
 .carousel{ position: relative; }
 
 /* =====================================
-        (###S.4) Carousel
+        (##S.4) Carousel
 ===================================== */
 
 .carousel-inner {
@@ -4864,7 +4888,7 @@ button.close {
 }
 
 /* =====================================
-      (###S.5) Carousel Control
+      (##S.5) Carousel Control
 ===================================== */
 
 .carousel-control-prev , .carousel-control-next {
@@ -4905,7 +4929,7 @@ button.close {
 }
 
 /* =====================================
-      (###S.6) Carousel Indicators
+      (##S.6) Carousel Indicators
 ===================================== */
 
 .carousel-indicators {
@@ -4953,7 +4977,7 @@ button.close {
 .carousel-indicators .active{ background-color: #fff; }
 
 /* =====================================
-      (###S.7) Carousel Caption
+      (##S.7) Carousel Caption
 ===================================== */
 
 .carousel-caption {
@@ -4969,7 +4993,7 @@ button.close {
 }
 
 /* =====================================
-              (###T) Align
+              (##T) Align
 ===================================== */
 
 .align-baseline{ vertical-align: baseline !important; }
@@ -5014,7 +5038,7 @@ a.bg-inverse:focus, a.bg-inverse:hover{ background-color: #101112 !important; }
 .d-inline-flex{ display: inline-flex !important; }
 
 /* =====================================
-            (###T.1) Media
+            (##T.1) Media
 ===================================== */
 
 @media (min-width: 576px){ .d-sm-none {
@@ -5289,7 +5313,7 @@ a.bg-inverse:focus, a.bg-inverse:hover{ background-color: #101112 !important; }
 }
 
 /* =====================================
-  (###U) More LaTeX to Tag Conversion
+  (##U) More LaTeX to Tag Conversion
 ===================================== */
 
 .w-25{ width: 25% !important; }
@@ -5499,7 +5523,7 @@ a.bg-inverse:focus, a.bg-inverse:hover{ background-color: #101112 !important; }
 }
 
 /* =====================================
-            (###U.1) Media
+            (##U.1) Media
 ===================================== */
 
 @media (min-width: 576px) {
@@ -6188,7 +6212,7 @@ a.bg-inverse:focus, a.bg-inverse:hover{ background-color: #101112 !important; }
 }
 
 /* =====================================
-        (###U.2) Text Types
+        (##U.2) Text Types
 ===================================== */
 
 .text-justify { text-align: justify !important; }
@@ -6205,7 +6229,7 @@ a.bg-inverse:focus, a.bg-inverse:hover{ background-color: #101112 !important; }
 .text-center { text-align: center !important; }
 
 /* =====================================
-      (###U.3) Text Types in Media
+      (##U.3) Text Types in Media
 ===================================== */
 
 @media (min-width: 576px) {
@@ -6230,7 +6254,7 @@ a.bg-inverse:focus, a.bg-inverse:hover{ background-color: #101112 !important; }
 }
 
 /* =====================================
-      (###U.4) More Text Types 
+      (##U.4) More Text Types 
 ===================================== */
 
 .text-lowercase { text-transform: lowercase !important; }
@@ -6256,7 +6280,7 @@ a.text-danger:focus, a.text-danger:hover { color: #880000 !important; }
 a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important; }
 
 /* =====================================
-      (###V) Hidden/Invisibility 
+      (##V) Hidden/Invisibility 
 ===================================== */
 
 .text-hide {
@@ -6271,7 +6295,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important; }
 .hidden-xs-up { display: none !important; }
 
 /* =====================================
-      (###V.1) Media 
+      (##V.1) Media 
 ===================================== */
 
 @media (max-width: 575px) {.hidden-xs-down { display: none !important; }}
@@ -6292,7 +6316,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important; }
 @media print {.hidden-print { display: none !important; }}
 
 /* =====================================
-  (###W) More Embedded/Button/Pulsate?
+  (##W) More Embedded/Button/Pulsate?
 ===================================== */
 
 .embed-responsive {
@@ -6462,7 +6486,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important; }
 }
 
 /* =====================================
-  (###X) External Font Settings
+  (##X) External Font Settings
 ===================================== */
 
 /*!
@@ -6479,7 +6503,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important; }
   font-style: normal;
 }
 /* =====================================
-  (###X.1) Font Tags
+  (##X.1) Font Tags
 ===================================== */
 
 .fa {
@@ -7305,6 +7329,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important; }
 .fa-wpexplorer:before { content: "\f2de"; }
 .fa-meetup:before { content: "\f2e0"; }
 
+/* =====================================
+      (##Y) Scren Reader Tag
+===================================== */
+
 .sr-only {
   position: absolute; /* Positioning scheme */
   width: 1px; /* Element width */
@@ -7325,6 +7353,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important; }
   clip: auto; /* Clipping rectangle */
 }
 
+
+/* =====================================
+    (##Z) Theorem-Like Environments
+===================================== */
+
 /* The theorem environments live in theorems.scss. If you add more
 theorem environments to ximera.cls, you should tell theorems.scss
 about it and choose the background color. */
@@ -7341,16 +7374,67 @@ We want to stop when the index reaches the end of the list of environments. */
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: theorem; /* The body needs to initialize all the counters. */; }
+
+/* =====================================
+  (##Z.1) Couter Initialization
+===================================== */
+body { /* The body needs to initialize/reset all the counters to count (number?) the environments on the page. */
+  counter-reset: theorem;
+  counter-reset: axiom;  
+  counter-reset: conjecture;  
+  counter-reset: corollary;  
+  counter-reset: proposition;  
+  counter-reset: lemma;  
+  counter-reset: claim;  
+  counter-reset: condition;  
+  counter-reset: idea;  
+  counter-reset: definition;  
+  counter-reset: conclusion;  
+  counter-reset: summary;  
+  counter-reset: warning;  
+  counter-reset: paradox;  
+  counter-reset: example;  
+  counter-reset: observation;  
+  counter-reset: fact;  
+  counter-reset: remark;  
+  counter-reset: algorithm;  
+  counter-reset: notation;  
+  counter-reset: criterion;  
+  counter-reset: exercise;  
+  counter-reset: problem;  
+  counter-reset: question;  
+  counter-reset: explanation;  
+  counter-reset: exploration;  
+  counter-reset: model;  
+  counter-reset: formula;  
+  counter-reset: procedure;  
+  counter-reset: template;  
+}
+
+/* =====================================
+  (##Z.2) Settings/Before/After by env.
+===================================== */
+
+/* Set all the left padding to 1em since we secretly put all env into a list. */
+.theorem ul, .axiom ul, .conjecture ul, .corollary ul, .proposition ul, .lemma ul, .claim ul, .condition ul, .idea ul, .definition ul, .conclusion ul, .summary ul, .warning ul, .paradox ul, .example ul, .observation ul, .fact ul, .remark ul, .algorithm ul, .notation ul, .criterion ul, .exercise ul, .problem ul, .question ul, .explanation ul, .exploration ul, .model ul, .formula ul, .procedure ul, .template ul { padding-left: 1em; }
+
+
+/* Now we do this by environment; 
+  for a quick search you can see which environments are counted using the padding list above
+  anything with a period in front is a supported environment.
+  Then just do a search for that keyword, e.g. to find theorem do a find for ".theorem" which is
+  listed in the list above at the start via ".theorem ul" (the ul is the setting, the .theorem is the env/class).
+
+  NOTE: Honestly basically all of this should probably be moved over to the LaTeX side, 
+    since environment styling is definitely something authors will want to impact.
+*/
 
 .theorem {
-  background-color: #FDFDFD;
-  /* Take the color of the class, saturate it to a fixed value, and lighten it to a fixed value (see top of file) */
-  /* Increment the counter for this theorem type. */
-  counter-increment: theorem;
+  background-color: #FDFDFD; /* Take the color of the class, saturate it to a fixed value, and lighten it to a fixed value (see top of file) */
+  counter-increment: theorem; /* Increment the counter for this theorem type. */
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all theorem environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7368,8 +7452,7 @@ body { counter-reset: theorem; /* The body needs to initialize all the counters.
 }
 
 .theorem::before {
-  /* Numbered everything in CSS is causing trouble.  TeX should decide the numbering. */
-  /* content:"${nameOfClass} " counter($counterToIncrement) ". ";*/
+  /* TeX should decide the numbering. */
   content: "theorem" attr(numbered) "."; /* Generated content */
   display: inline; /* Layout display mode */
   text-transform: capitalize; /* CSS here only applies to one word, like "Theorem." or "Example." */
@@ -7378,12 +7461,6 @@ body { counter-reset: theorem; /* The body needs to initialize all the counters.
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.theorem ul { padding-left: 1em; }
-
-/* theoremEnvironments above is a list of lists. Get the correct list: */
-/*Nth from the list the name and color of the class*/
-/* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: axiom; /* The body needs to initialize all the counters. */; }
 
 .axiom {
   background-color: #FDFDFD;
@@ -7392,7 +7469,7 @@ body { counter-reset: axiom; /* The body needs to initialize all the counters. *
   counter-increment: axiom;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all axiom environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7420,12 +7497,11 @@ body { counter-reset: axiom; /* The body needs to initialize all the counters. *
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.axiom ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: conjecture; /* The body needs to initialize all the counters. */; }
+
 
 .conjecture {
   background-color: #FDFDFD;
@@ -7434,7 +7510,7 @@ body { counter-reset: conjecture; /* The body needs to initialize all the counte
   counter-increment: conjecture;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all conjecture environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7462,12 +7538,11 @@ body { counter-reset: conjecture; /* The body needs to initialize all the counte
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.conjecture ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: corollary; /* The body needs to initialize all the counters. */; }
+
 
 .corollary {
   background-color: #FDFDFD;
@@ -7476,7 +7551,7 @@ body { counter-reset: corollary; /* The body needs to initialize all the counter
   counter-increment: corollary;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all corollary environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7504,12 +7579,11 @@ body { counter-reset: corollary; /* The body needs to initialize all the counter
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.corollary ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: proposition; /* The body needs to initialize all the counters. */; }
+
 
 .proposition {
   background-color: #FDFDFD;
@@ -7518,7 +7592,7 @@ body { counter-reset: proposition; /* The body needs to initialize all the count
   counter-increment: proposition;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all proposition environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7546,12 +7620,10 @@ body { counter-reset: proposition; /* The body needs to initialize all the count
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.proposition ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: lemma; /* The body needs to initialize all the counters. */; }
 
 .lemma {
   background-color: #FDFDFD;
@@ -7560,7 +7632,7 @@ body { counter-reset: lemma; /* The body needs to initialize all the counters. *
   counter-increment: lemma;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all lemma environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7588,12 +7660,10 @@ body { counter-reset: lemma; /* The body needs to initialize all the counters. *
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.lemma ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: claim; /* The body needs to initialize all the counters. */; }
 
 .claim {
   background-color: #FDFDFD;
@@ -7602,7 +7672,7 @@ body { counter-reset: claim; /* The body needs to initialize all the counters. *
   counter-increment: claim;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all claim environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7630,12 +7700,10 @@ body { counter-reset: claim; /* The body needs to initialize all the counters. *
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.claim ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: condition; /* The body needs to initialize all the counters. */; }
 
 .condition {
   background-color: #FDFDFD;
@@ -7644,7 +7712,7 @@ body { counter-reset: condition; /* The body needs to initialize all the counter
   counter-increment: condition;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all condition environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7672,12 +7740,10 @@ body { counter-reset: condition; /* The body needs to initialize all the counter
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.condition ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: idea; /* The body needs to initialize all the counters. */; }
 
 .idea {
   background-color: #FDFDFD;
@@ -7686,7 +7752,7 @@ body { counter-reset: idea; /* The body needs to initialize all the counters. */
   counter-increment: idea;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all idea environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7714,12 +7780,10 @@ body { counter-reset: idea; /* The body needs to initialize all the counters. */
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.idea ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: definition; /* The body needs to initialize all the counters. */; }
 
 .definition {
   background-color: #FDFDFD;
@@ -7728,7 +7792,7 @@ body { counter-reset: definition; /* The body needs to initialize all the counte
   counter-increment: definition;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all definition environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7756,12 +7820,10 @@ body { counter-reset: definition; /* The body needs to initialize all the counte
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.definition ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: conclusion; /* The body needs to initialize all the counters. */; }
 
 .conclusion {
   background-color: #FDFDFD;
@@ -7770,7 +7832,7 @@ body { counter-reset: conclusion; /* The body needs to initialize all the counte
   counter-increment: conclusion;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all conclusion environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7798,12 +7860,10 @@ body { counter-reset: conclusion; /* The body needs to initialize all the counte
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.conclusion ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: summary; /* The body needs to initialize all the counters. */; }
 
 .summary {
   background-color: #FDFDFD;
@@ -7812,7 +7872,7 @@ body { counter-reset: summary; /* The body needs to initialize all the counters.
   counter-increment: summary;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all summary environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7840,12 +7900,10 @@ body { counter-reset: summary; /* The body needs to initialize all the counters.
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.summary ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: warning; /* The body needs to initialize all the counters. */; }
 
 .warning {
   background-color: #FDFDFD;
@@ -7854,7 +7912,7 @@ body { counter-reset: warning; /* The body needs to initialize all the counters.
   counter-increment: warning;
   border: 1px solid hsl(0deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(0deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all warning environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7882,12 +7940,10 @@ body { counter-reset: warning; /* The body needs to initialize all the counters.
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.warning ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: paradox; /* The body needs to initialize all the counters. */; }
 
 .paradox {
   background-color: #FDFDFD;
@@ -7896,7 +7952,7 @@ body { counter-reset: paradox; /* The body needs to initialize all the counters.
   counter-increment: paradox;
   border: 1px solid hsl(0deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(0deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all paradox environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7924,12 +7980,10 @@ body { counter-reset: paradox; /* The body needs to initialize all the counters.
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.paradox ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: example; /* The body needs to initialize all the counters. */; }
 
 .example {
   background-color: #FDFDFD;
@@ -7938,7 +7992,7 @@ body { counter-reset: example; /* The body needs to initialize all the counters.
   counter-increment: example;
   border: 1px solid hsl(60deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(60deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all example environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -7966,12 +8020,11 @@ body { counter-reset: example; /* The body needs to initialize all the counters.
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.example ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: observation; /* The body needs to initialize all the counters. */; }
+
 
 .observation {
   background-color: #FDFDFD;
@@ -7980,7 +8033,7 @@ body { counter-reset: observation; /* The body needs to initialize all the count
   counter-increment: observation;
   border: 1px solid hsl(60deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(60deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all observation environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8008,12 +8061,10 @@ body { counter-reset: observation; /* The body needs to initialize all the count
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.observation ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: fact; /* The body needs to initialize all the counters. */; }
 
 .fact {
   background-color: #FDFDFD;
@@ -8022,7 +8073,7 @@ body { counter-reset: fact; /* The body needs to initialize all the counters. */
   counter-increment: fact;
   border: 1px solid hsl(60deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(60deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all fact environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8050,12 +8101,10 @@ body { counter-reset: fact; /* The body needs to initialize all the counters. */
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.fact ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: remark; /* The body needs to initialize all the counters. */; }
 
 .remark {
   background-color: #FDFDFD;
@@ -8064,7 +8113,7 @@ body { counter-reset: remark; /* The body needs to initialize all the counters. 
   counter-increment: remark;
   border: 1px solid hsl(60deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(60deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all remark environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8092,12 +8141,10 @@ body { counter-reset: remark; /* The body needs to initialize all the counters. 
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.remark ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: algorithm; /* The body needs to initialize all the counters. */; }
 
 .algorithm {
   background-color: #FDFDFD;
@@ -8106,7 +8153,7 @@ body { counter-reset: algorithm; /* The body needs to initialize all the counter
   counter-increment: algorithm;
   border: 1px solid hsl(60deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(60deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all algorithm environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8134,12 +8181,10 @@ body { counter-reset: algorithm; /* The body needs to initialize all the counter
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.algorithm ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: notation; /* The body needs to initialize all the counters. */; }
 
 .notation {
   background-color: #FDFDFD;
@@ -8148,7 +8193,7 @@ body { counter-reset: notation; /* The body needs to initialize all the counters
   counter-increment: notation;
   border: 1px solid hsl(60deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(60deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all notation environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8176,12 +8221,10 @@ body { counter-reset: notation; /* The body needs to initialize all the counters
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.notation ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: criterion; /* The body needs to initialize all the counters. */; }
 
 .criterion {
   background-color: #FDFDFD;
@@ -8190,7 +8233,7 @@ body { counter-reset: criterion; /* The body needs to initialize all the counter
   counter-increment: criterion;
   border: 1px solid hsl(60deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(60deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all criterion environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8218,12 +8261,10 @@ body { counter-reset: criterion; /* The body needs to initialize all the counter
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.criterion ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: exercise; /* The body needs to initialize all the counters. */; }
 
 .exercise {
   background-color: #FDFDFD;
@@ -8232,7 +8273,7 @@ body { counter-reset: exercise; /* The body needs to initialize all the counters
   counter-increment: exercise;
   border: 1px solid hsl(240deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(240deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all exercise environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8260,12 +8301,10 @@ body { counter-reset: exercise; /* The body needs to initialize all the counters
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.exercise ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: problem; /* The body needs to initialize all the counters. */; }
 
 .problem {
   background-color: #FDFDFD;
@@ -8274,7 +8313,7 @@ body { counter-reset: problem; /* The body needs to initialize all the counters.
   counter-increment: problem;
   border: 1px solid hsl(240deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(240deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all problem environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8302,12 +8341,10 @@ body { counter-reset: problem; /* The body needs to initialize all the counters.
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.problem ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: question; /* The body needs to initialize all the counters. */; }
 
 .question {
   background-color: #FDFDFD;
@@ -8316,7 +8353,7 @@ body { counter-reset: question; /* The body needs to initialize all the counters
   counter-increment: question;
   border: 1px solid hsl(240deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(240deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all question environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8344,12 +8381,10 @@ body { counter-reset: question; /* The body needs to initialize all the counters
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.question ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: explanation; /* The body needs to initialize all the counters. */; }
 
 .explanation {
   background-color: #FDFDFD;
@@ -8358,7 +8393,7 @@ body { counter-reset: explanation; /* The body needs to initialize all the count
   counter-increment: explanation;
   border: 1px solid hsl(137.1428571429deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(137.1428571429deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all explanation environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8378,7 +8413,8 @@ body { counter-reset: explanation; /* The body needs to initialize all the count
 .explanation::before {
   /* Numbered everything in CSS is causing trouble.  TeX should decide the numbering. */
   /* content:"${nameOfClass} " counter($counterToIncrement) ". ";*/
-  content: "explanation" attr(numbered) "."; /* Generated content */
+  /*content: "Explanation" attr(numbered) "."; /* Uncomment this one to number explanation for now - pending discussion. */
+  content: "Explanation."; /* Comment this one to un-number explanation for now - pending discussion. */
   display: inline; /* Layout display mode */
   text-transform: capitalize; /* CSS here only applies to one word, like "Theorem." or "Example." */
   font-weight: bold;
@@ -8386,12 +8422,9 @@ body { counter-reset: explanation; /* The body needs to initialize all the count
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.explanation ul { padding-left: 1em; }
-
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: exploration; /* The body needs to initialize all the counters. */; }
 
 .exploration {
   background-color: #FDFDFD;
@@ -8400,7 +8433,7 @@ body { counter-reset: exploration; /* The body needs to initialize all the count
   counter-increment: exploration;
   border: 1px solid hsl(240deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(240deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all exploration environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8428,12 +8461,10 @@ body { counter-reset: exploration; /* The body needs to initialize all the count
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.exploration ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: model; /* The body needs to initialize all the counters. */; }
 
 .model {
   background-color: #FDFDFD;
@@ -8442,7 +8473,7 @@ body { counter-reset: model; /* The body needs to initialize all the counters. *
   counter-increment: model;
   border: 1px solid hsl(240deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(240deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all model environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8470,12 +8501,10 @@ body { counter-reset: model; /* The body needs to initialize all the counters. *
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.model ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: formula; /* The body needs to initialize all the counters. */; }
 
 .formula {
   background-color: #FDFDFD;
@@ -8484,7 +8513,7 @@ body { counter-reset: formula; /* The body needs to initialize all the counters.
   counter-increment: formula;
   border: 1px solid hsl(240deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(240deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all formula environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8512,12 +8541,10 @@ body { counter-reset: formula; /* The body needs to initialize all the counters.
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.formula ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: procedure; /* The body needs to initialize all the counters. */; }
 
 .procedure {
   background-color: #FDFDFD;
@@ -8526,7 +8553,7 @@ body { counter-reset: procedure; /* The body needs to initialize all the counter
   counter-increment: procedure;
   border: 1px solid hsl(240deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(240deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all procedure environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8554,12 +8581,11 @@ body { counter-reset: procedure; /* The body needs to initialize all the counter
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.procedure ul { padding-left: 1em; }
 
 /* theoremEnvironments above is a list of lists. Get the correct list: */
 /*Nth from the list the name and color of the class*/
 /* I can imagine us wanting some of the environments to share a counter, in which case you would put something else here. */
-body { counter-reset: template; /* The body needs to initialize all the counters. */; }
+
 
 .template {
   background-color: #FDFDFD;
@@ -8568,7 +8594,7 @@ body { counter-reset: template; /* The body needs to initialize all the counters
   counter-increment: template;
   border: 1px solid hsl(240deg, 25%, 90%); /* Border style */
   border-left: 12px solid hsl(240deg, 25%, 90%);
-  /*These are the things that are common to all environments. */
+  /*These are the things that are common to all template environments. */
   padding-left: 12px;
   padding-right: 24px;
   margin-top: 12pt; /* Top outer spacing */
@@ -8596,8 +8622,12 @@ body { counter-reset: template; /* The body needs to initialize all the counters
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.template ul { padding-left: 1em; }
-.explanation::before { content: "Explanation."; }
+
+
+/* ==========================================
+  (##Z.3) Settings/Before/After For Titles
+========================================== */
+
 
 /****************************************************************/
 /* \begin{theorem}[title] will put title inside a span.theorem-like-title */
@@ -8608,6 +8638,11 @@ body { counter-reset: template; /* The body needs to initialize all the counters
 
 .theorem-like-title::before { content: "("; }
 .theorem-like-title::after { content: ")"; }
+
+/* =======================
+      (##AA) MathJax
+======================= */
+
 .hidden { visibility: hidden; }
 
 .hidden-out-of-view {
@@ -8637,6 +8672,10 @@ nav { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Rob
 }
 
 .ui-accordion .ui-accordion-header { font-size: 1.1em !important; }
+
+/* =======================
+      (##AB) Footer
+======================= */
 
 footer {
   margin-top: 5ex; /* Top outer spacing */
@@ -8681,6 +8720,12 @@ span.LATEX .TEX .E {
   font-size: 1em;
 }
 
+
+/* =========================================
+            (##AC) Abstract
+========================================= */
+
+
 /****************************************************************/
 /* tex4ht generates description lists from \begin{description} */
 dl.description {
@@ -8713,6 +8758,10 @@ dl.description dt.description {
 }
 
 .abstract:empty { display: none; }
+
+/* =========================================
+      (##AD) Certificate of Completion
+========================================= */
 
 /****************************************************************/
 dl.certificate { width: 100%; }
@@ -8777,6 +8826,11 @@ dl.dialogue {
   margin-top: 18pt; /* Top outer spacing */
   margin-bottom: 18pt; /* Bottom outer spacing */
 }
+
+
+/* =========================================
+    (##AE) Image Environments (Again?)
+========================================= */
 
 @media screen and (min-width: 48em) {
   dl.dialogue dt { text-align: right !important; }
@@ -8880,8 +8934,16 @@ dl.dialogue {
   white-space: nowrap; /* Whitespace handling */
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+/* =========================================
+        (##AF) Customizing...?
+========================================= */
+
+
+
+/* =========================================
+        (##AF.1) Carousel
+========================================= */
+
 /* Carousel base class */
 .carousel { margin-bottom: 4rem; }
 
@@ -8902,8 +8964,10 @@ dl.dialogue {
   height: 32rem; /* Element height */
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
+/* =========================================
+        (##AF.2) Marketing Content
+========================================= */
+
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem; /* Bottom outer spacing */
@@ -8917,8 +8981,11 @@ dl.dialogue {
   margin-left: 0.75rem; /* Left outer spacing */
 }
 
-/* Featurettes
-------------------------- */
+
+/* =========================================
+        (##AF.3) Featurettes
+========================================= */
+
 .featurette-divider { margin: 5rem 0; /* Space out the Bootstrap <hr> more */; }
 
 /* Thin out the marketing headings */
@@ -8928,8 +8995,11 @@ dl.dialogue {
   letter-spacing: -0.05rem;
 }
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
+
+/* =========================================
+        (##AF.4) Responsive CSS
+========================================= */
+
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
   .carousel-caption p {
@@ -9021,7 +9091,10 @@ footer {
   position: relative; /* Positioning scheme */
 }
 
-/* The styling for the abstract */
+/* =========================================
+        (##AF.5) Abstract Styling
+========================================= */
+
 #byline:not(:empty):before {
   content: "By "; /* Generated content */
   font-style: normal;
@@ -9144,7 +9217,10 @@ table.tabular td { padding: 0; }
   padding: 0; /* Inner spacing */
 }
 
-/* make items look like links ... */
+/* =========================================
+        (##AF.6) Items To Links
+========================================= */
+
 .xmsettings li { color: #0275d8; }
 .xmdownload:hover .xmdownload-inhoud , .xmuser:hover .xmuser-inhoud , .xmlogin:hover .xmlogin-inhoud , .xmsettings:hover .xmsettings-inhoud { display: block; }
 
@@ -9152,6 +9228,10 @@ table.tabular td { padding: 0; }
   padding: 1px 5px; /* Inner spacing */
   margin-left: 2px; /* Left outer spacing */
 }
+
+/* ====================================================
+  (##AF.7) Contact Instructor and Math Editor Button
+==================================================== */
 
 button#math-edit-button {
   background-color: transparent;
@@ -9286,6 +9366,11 @@ div.main-inhoud.main-toc {
   border-radius: 5px;
 }
 
+
+/* ============================
+  (##AF.8) Table of Contents
+============================ */
+
 #xourse-clear { display: none; }
 .toc li { padding: 1px; }
 
@@ -9356,7 +9441,11 @@ div.main-inhoud.main-toc {
   }
   .main-inhoud .toc { width: 100% !important; /* always full width on small screens */; }
 }
-/* Overwrite bootstrap defaults */
+
+/* ============================
+    (##AF.9) Progress Bar
+============================ */
+
 .progress {
   display: flex; /* Layout display mode */
   overflow: hidden; /* Overflow behavior */
@@ -9388,6 +9477,10 @@ button#math-edit-button {
   background-color: transparent;
   border-color: white;
 }
+
+/* ============================
+      (##AF.10) Top Bar?
+============================ */
 
 /* topbar*/
 .xmhidden {
@@ -9506,7 +9599,11 @@ button#math-edit-button {
 .bars:before { top: 5px; }
 .bars:after { top: -5px; }
 
-/* Tablet menu */
+/* ============================
+      (##AF.11) Tablet Menu
+============================ */
+
+
 @media all and (min-width: 22468px) {
   .menu {
     justify-content: center;
@@ -9543,7 +9640,11 @@ button#math-edit-button {
     color: #ddd; /* Text color */
   }
 }
-/* Desktop menu */
+
+/* =============================
+      (##AF.12) Desktop Menu
+============================= */
+
 @media all and (min-width: 22768px) {
   .xmhidden-small {
     display: unset; /* Layout display mode */
@@ -9593,6 +9694,10 @@ img.xourselogo {
 }
 
 .topbar-items { display: flex; }
+
+/* ==============================
+    (##AF.13) Cards (again?)
+============================== */
 
 main.xourse {
   display: flex; /* Layout display mode */
@@ -9884,6 +9989,10 @@ main.xourse:before { display: inline; }
   /*background-color: transparent;*/
 }
 
+/* ==============================
+  (##AF.14) Nav panel (again?)
+============================== */
+
 div.scroll::-webkit-scrollbar { width: 12pt; }
 
 div.scroll::-webkit-scrollbar-track { background-color: #eceeef; }
@@ -9920,6 +10029,14 @@ div.quote {
 }
 
 div.quote p { margin-bottom: 0em; }
+
+
+
+
+
+/* ==============================
+    (##AG) Syntax Highlighter
+============================== */
 
 /****************************************************************/
 /**
@@ -10003,6 +10120,10 @@ div.quote p { margin-bottom: 0em; }
   vertical-align: top !important; /* Vertical alignment */
   padding: 0; /* Inner spacing */
 }
+
+/* ==============================
+    (##AH) Word Choice
+============================== */
 
 /****************************************************************/
 /* Dropdowns can be inline */
